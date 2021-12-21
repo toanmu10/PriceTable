@@ -1,0 +1,201 @@
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto' , sans-serif;
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+     background-color: rgb(177, 187, 243);
+ }
+
+.container{
+   
+}
+.list-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    margin: 0 20px 10px 20px;
+}
+
+/* Phần head của 1 box */
+
+.box:nth-child(1){
+    margin-bottom: 100px;
+}
+
+.box:nth-child(2){
+    margin-bottom: 100px;
+}
+.box:nth-child(2) .price{
+    background-color: rgb(44, 46, 61);
+}
+.box:nth-child(2) .price h4{
+    color: rgb(215, 68, 152);
+}
+.box:nth-child(3) .price h4{
+    color : rgb(5, 177, 48);
+}
+.head{
+    position: relative;
+    width: 100%;
+}
+.head img{
+    vertical-align: middle;
+    width: 100%;
+}
+.head .name{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.head .name h3{ 
+    text-align: center;
+    font-size : 25px;
+    color: white;
+    font-weight: 200;
+}
+.head .name p{
+    color: rgb(156, 170, 175);
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top:10px;font-weight: 200;
+
+}
+.price{
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    text-align: center;
+    padding: 28px 20px;
+}
+.price h4{
+    color: rgb(88, 156, 235);
+    font-size: 25px;
+    font-weight: 200;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+}
+.price span{
+    font-size: 12px;
+    color: rgb(206, 198, 198);
+}
+
+
+.img-new{
+    position:absolute;
+    top: -15px;
+    left : -10px
+}
+.img-new img{
+    width: 60px;
+    height: 60px;
+}
+.img-new p{
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+/* Phần content của box */
+.content{
+    background-color:white;
+    margin-top:-22px;
+    text-align: center;
+}
+
+.content .title{     
+    text-align: center;
+    margin-top: 15px;
+}
+.title h4{
+    font-size:18px;
+    padding-top:25px;
+    font-weight: 400;
+    color: rgb(104, 103, 103); 
+}
+
+.title p{
+    font-size:13px;
+    font-weight: 200;
+    margin-top: 10px ;
+    color: rgb(153, 153, 153); 
+}
+
+.content ul{
+    list-style-type:none;
+    margin-top: 20px;
+}
+
+.content ul li{
+    padding: 12px 0;
+    text-align: center;
+    font-size: 12px;
+    color : rgb(104, 103, 103);
+    
+    
+}
+.content ul li:nth-child(odd){
+    background-color:rgb(245, 239, 239);
+}
+.content .btnBuy {
+    font-size:15px;
+    margin: 40px 0 ;
+    outline:0;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+
+.btn-1{
+    border: 1px solid rgb(33, 150, 247);
+    color: rgb(33, 150, 247);
+}
+.btn-2{
+    border: 1px solid rgb(215, 68, 152);
+    color: rgb(215, 68, 152);
+}
+
+.btn-3{
+    border: 1px solid rgb(5, 177, 48);
+    color: rgb(5, 177, 48);
+}
+
+
+.content .btn-1:hover{
+    background-color: rgb(33, 150, 247);
+    color: #fff;
+    cursor: pointer;
+}
+.content .btn-2:hover{
+    background-color: rgb(215, 68, 152);
+    color: #fff;
+    cursor: pointer;
+}
+.content .btn-3:hover{
+    background-color:  rgb(5, 177, 48);
+    color: #fff;
+    cursor: pointer;
+}
