@@ -9,9 +9,18 @@ html{
     margin: 0;
     box-sizing: border-box;
 }
+
+*:after, *:before{
+    content: "";
+    position: absolute;  
+}
  body{
      background-color: rgb(177, 187, 243);
  }
+
+ul{
+    list-style-type:none;
+}
 
 .container{
    
@@ -146,7 +155,6 @@ html{
 }
 
 .content ul{
-    list-style-type:none;
     margin-top: 20px;
 }
 
